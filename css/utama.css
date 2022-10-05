@@ -1,0 +1,831 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	width: 100%;
+	height: 5000px;
+}
+
+/*navbar*/
+menu{
+	width: 100%;
+	height: 70px;
+	background: white;
+	position: fixed;
+	z-index: 999;
+}
+
+menu img{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-left: 0px;
+}
+
+menu ul li{
+	float: left;
+	text-decoration: none;
+	list-style: none;
+	margin-left: 50px;
+	line-height: 70px;
+}
+
+menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+menu ul li a:hover{
+	color: red ;
+}
+
+menu ul li ul{
+	display: none;
+}
+
+
+menu ul li:hover > ul{
+	display: block;
+	background: white;
+	margin-left: -50px;
+}
+
+menu ul li ul{
+	position: absolute;
+	width: 200px;
+	margin-left: -60px;
+}
+
+
+
+nav .kanan img{
+	width: 30px;
+	height: 30px;
+	margin-left: 800px;
+	margin-top: -50px;
+}
+
+nav .kanan h1{
+	font-size: 20px;
+	margin-left: 840px;
+	line-height: 70px;
+}
+/*akhir navbar*/
+
+
+/*slider*/
+.slider{
+	margin: 0px;
+	position: relative;
+}
+
+.slider img{
+	width: 100%;
+	height: 600px;
+	margin-top: 80px;
+}
+
+.slider .judul h1{
+	position: absolute;
+	color: white;
+	font-size: 120px;
+	top: 25%;
+	left: 330px;
+	font-family: brush script mt;
+}
+
+.slider .keterangan p{
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	top: 45%;
+	left: 472px;
+	font-family: arial;
+}
+
+.slider .tombol a{
+	position: absolute;
+	background:seagreen;
+	color: white;
+	font-size: 25px;
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	padding-top: 20px;
+	padding-left: 30px;
+	bottom: 200px;
+	left: 540px;
+	font-family: calibri;
+	text-decoration: none;
+}
+
+.tombol a:hover{
+	background: red;
+}
+/*akhir slider*/
+
+/*where go*/
+.subscribe{
+	background: #00002c;
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+	margin-top: -4px;
+}
+
+.subscribe h1{
+	color: white;
+	float: left;
+	margin-top: 40px;
+	margin-left: 40px;
+	font-size: 25px;
+}
+
+.subscribe input[type=text],[type=date]{
+	width: 150px;
+	height: 20px;
+	padding: 20px;
+	margin-left: 30px;
+	margin-top: 25px;
+	background: #00002c;
+	border: 1px solid white;
+	color: white;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+ .satu,.dua::-webkit-input-placeholder{
+ 		color: white;
+ 		font-size: 16px;
+ }
+
+ .subscribe select{
+	width: 180px;
+	height: 60px;
+	padding: 0px 10px;
+	margin-left: 20px;
+	margin-top: 25px;
+	background: #00002c;
+	border: 1px solid white;
+	color: white;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.subscribe a{
+	text-decoration: none;
+	padding: 20px 50px;
+	margin-left: 50px;
+	color: white;
+	font-size: 30px;
+	background: red;
+	border-radius: 10px;
+}
+
+.subscribe a:hover{
+	background: green;
+}
+/*akhir where go*/
+
+
+/*popular destination*/
+
+.destination{
+	width: 1200px;
+	margin: auto;
+	margin-top: 200px;
+}
+
+.destination h1{
+	text-align: center;
+	font-size: 40px;
+	font-family: calibri;
+	margin-bottom: 20px;
+}
+
+.destination p{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.destination .bawah2{
+	margin-top: 100px;
+	overflow: hidden;
+	padding: 0 30px;
+}
+
+.destination .bawah2 .kiri{
+	float: left;
+	width: 300px;
+	height: 800px;
+	margin-left: 50px;
+}
+
+.destination .bawah2 .kanan{
+	 float: right;
+	 width: 600px;
+}
+
+.destination .bawah2 .kanan .x1{
+	float: left;
+	width: 300px;
+	margin-left: -120px;
+}
+
+.destination .bawah2 .kanan .x2{
+	float: right;
+	width: 300px;
+	margin-right: 50px;
+}
+
+.destination .bawah2 img{
+	width: 320px;
+	height: 250px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+
+.destination .foto{
+	position: relative;
+}
+
+.destination .foto .nomor{
+	position: absolute;
+	width: 25%;
+	height: auto;
+	background: green;
+	bottom: 20%;
+	left: 30%;
+	border-radius: 50%;
+	font-size: 16px;
+	color: white;
+	padding: 6px;
+	text-align: center;
+}
+
+.destination .foto .keterangan{
+	display:block ;
+	width: 60px;
+	position: absolute;
+	font-size: 20px;
+	bottom: 17%;
+	left: 5%;
+	color: white;
+	background:rgba(50, 20, 10, 0.5);
+	text-align: center;
+	padding: 7px;
+}
+
+.destination .foto:hover img {
+	transform: translate(0px,-10px);
+	opacity: 0.9;
+}
+
+.destination .foto:hover .keterangan {
+	color: red;
+}
+
+.destination .foto:hover .nomor {
+	background: red;
+}
+
+/*akhir popular destinasi*/
+
+/*subscribe2*/
+
+.subscribe2{
+	width: 100%;
+	height: 200px;
+	margin-top: -180px;
+	float: left;
+}
+
+.subscribe2 img {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.subscribe2 h1{
+	position: absolute;
+	margin-top: -150px;
+	padding-left: 50px;
+	color: white;
+	font-size: 40px;
+}
+
+.subscribe2 p{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	margin-top: -100px;
+	padding-left: 50px;
+}
+
+.subscribe2 input{
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	margin-top: -140px;
+	margin-left: 500px;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.subscribe2 .tombol{
+	position: absolute;
+	margin-left: 400px;
+	margin-top: -30px;
+}
+
+.subscribe2 .tombol a{
+	text-decoration: none;
+	float: left;
+	margin-top: -120px;
+	margin-left: 550px;
+	width: 160px;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 40px;
+	background: red;
+	border-radius: 20px;
+	color: black;
+}
+
+.subscribe2 .tombol:hover a{
+	background: lawngreen;
+	border-radius: 20px;
+	color: white;
+}
+/*akhir subscribe*/
+
+/*tempat favorit*/
+
+.favorit{
+	width: 1200px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.favorit h1{
+	text-align: center;
+	font-size: 40px;
+	font-family: calibri;
+	margin-bottom: 20px;
+}
+
+.favorit p{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.favorit .bawah2{
+	margin-top: 100px;
+	overflow: hidden;
+	padding: 0 30px;
+}
+
+.favorit .bawah2 .kiri{
+	float: left;
+	width: 300px;
+	height: 800px;
+	margin-left: 50px;
+}
+
+.favorit .bawah2 .kanan{
+	 float: right;
+	 width: 600px;
+}
+
+.favorit .bawah2 .kanan .x1{
+	float: left;
+	width: 300px;
+	margin-left: -120px;
+}
+
+.favorit .bawah2 .kanan .x2{
+	float: right;
+	width: 300px;
+	margin-right: 50px;
+}
+
+.favorit .bawah2 img{
+	width: 320px;
+	height: 250px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	border-radius: 10px ;
+}
+
+.favorit .foto{
+	position: relative;
+}
+
+.favorit .foto .nomor{
+	position: absolute;
+	width: 25%;
+	height: auto;
+	background: green;
+	top: 10%;
+	left: 8%;
+	border-radius: 15px;
+	font-size: 20px;
+	color: white;
+	padding: 6px;
+	text-align: center;
+}
+
+.favorit .foto .keterangan{
+	display:block ;
+	position: absolute;
+	font-size: 30px;
+	bottom: 10%;
+	left: 0%;
+	color: black;
+	text-align: center;
+	padding: 7px;
+	margin-bottom: 30px;
+}
+
+.favorit .foto:hover img {
+	opacity: 0.9;
+}
+
+.favorit .foto:hover .keterangan {
+	color: red;
+}
+
+.favorit .foto:hover .nomor {
+	background: red;
+}
+
+.favorit .penjelasan{
+	width: 320px;
+	height: 80px;
+	margin-top :-15px;
+	margin-bottom: 20px;
+	padding-top: 25px;
+	background: white ;
+}
+
+.favorit .penjelasan p{
+	 font-size: 20px;
+	 margin-left: 10px;
+	 text-align: left;
+}
+
+.favorit .penjelasan img{
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+.favorit .penjelasan h6{
+	font-size: 20px;
+	margin-top: -42px;
+	margin-left: 253px;
+}
+
+.favorit .lain a{
+	float: left;
+	width: 150px;
+	height: 20px;
+	font-size: 25px;
+	padding: 17px 20px;
+	padding-bottom: 30px;
+	padding-left: 45px;
+	margin-top: 100px;
+	margin-left: -80px;
+	text-decoration: none;
+	background: lawngreen;
+	color: black;
+	border-radius: 10px;
+}
+
+.favorit .lain a:hover{
+	background: red;
+	color: white;
+}
+/*akhir tempat favorit*/
+
+
+/*video*/
+iframe{
+	margin-top: 100px;
+	width: 100%;
+	height: 500px;
+}
+
+/*akhir video*/
+
+
+/*3 logo*/
+
+.logo{
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+
+.logo img{
+	width: 100px;
+	height: 100px;
+	margin-top: 200px;
+	margin-left: 110px;
+}
+
+.logo .kiri{
+	float: left;
+	margin-left: 80px;
+}
+
+.logo .kanan{
+	float: right;
+}
+
+.logo .kanan .x1{
+	float: left;
+	padding-right: 85px;
+}
+
+.logo .kanan .x2{
+	float: right ;
+	padding-right: 70px;
+}
+
+.logo h1{
+	text-align: center;
+	font-size: 30px;
+}
+
+.logo p{
+	text-align: center;
+	font-size: 16px;
+}
+
+
+/*akhir 3 logo*/
+
+/*testimoni*/
+
+.testimoni{
+	margin-top: 120px;
+	margin-left: 20px;
+}
+
+.testimoni .gambar{
+	margin: auto;
+	text-align: center;
+}
+
+
+.testimoni .gambar img{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.testimoni h1{
+  color: white;
+  float: left;
+  text-align: center;
+  margin-top: -55px;
+  margin-left: 660px;
+  transform: rotate(180deg);
+  width: 50px;
+  height: 8px;
+  font-size: 40px;
+  background: #2e9989;
+  border-radius: 100%;
+  padding-top: 0px;
+  padding-bottom: 60px;
+} 
+
+.testimoni .teks p{
+	margin: auto;
+	margin-top: 20px;
+	max-width: 350px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.testimoni .nama p{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+}
+
+/*akhir testimoni*/   
+
+
+/*recent*/
+
+.recent{
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.recent img{
+	width: 300px;
+	height: 250px;
+	border-radius: 10px;
+	margin-top: 100px;
+}
+
+.recent h1{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 50px;
+	font-family: times new roman;
+}
+
+.recent .kiri{
+	float: left;
+	margin-left: 100px;
+}
+
+.recent .kanan{
+	float: right;
+	margin-right: 100px;
+}
+
+.recent .kanan .x1{
+	float: left;
+	margin-right: 80px;
+}
+
+.recent .kanan .x2{
+	float: right;
+}
+
+.recent h2{
+	font-size: 20px;
+	margin: 10px 0px ;
+}
+
+.recent p{
+	font-size: 20px;
+	max-width: 300px;
+	color: #818a76;
+}
+
+.recent .foto{
+	margin-top: -100px;
+}
+
+.recent .foto:hover p{
+	color: red;
+}
+/*akhir recent*/
+
+/*footer*/
+footer{
+	margin-top: 200px;
+	width: 100%;
+	height: 540px;
+	background: #00002c;
+	overflow: hidden;
+}
+
+footer h2:hover{
+	color: red;
+}
+
+footer .kiri{
+	float: left;
+	padding-top: 80px;
+	padding-left: 50px;
+}
+
+footer .kiri .x1{
+	float: left;
+}
+
+footer .kiri .x1 img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+footer .kiri .x1 h1{
+	color: white;
+	margin-top: -80px;
+	margin-left: 100px;
+	font-size: 20px;
+}
+
+footer .kiri .x1 .pengenalan{
+	margin-top: 50px;
+	font-size: 16px;
+}
+
+footer .kiri .x1 .icon img{
+	width: 30px;
+	height: 30px;
+	padding-top: 30px;
+	padding-left: 2px;
+	border-radius: 0px;
+}
+footer .kiri .x1 p{
+	color: white;
+	margin-top: 10px;
+}
+
+footer .kiri .x2{
+	float: right;
+	margin-top: 20px ;
+	margin-left: 100px;
+	font-size: 12px;
+}
+
+footer .kiri .x2 h1{
+	color: white;
+	margin-bottom: 30px;
+}
+
+footer .kiri .x2 h2{
+	color: white;
+	padding-bottom:10px ;
+}
+
+footer .kiri .x2 h2:hover{
+	color: red;
+}
+
+footer .kanan{
+	float: right;
+	overflow: hidden;
+	font-size: 12px;
+	margin-top: 102px;
+}
+
+footer .kanan .x1{
+	float: left;
+	color: white;
+	margin-right: 220px;
+	margin-top: 1px;
+}
+
+footer .kanan .x1 h1{
+	margin-bottom: 25px;
+}
+
+footer .kanan .x1 h2{
+	padding-bottom: 10px;
+}
+
+footer .kanan .x1 .xx1{
+	float: left;
+}
+
+footer .kanan .x1 .xx2{
+	float: right;
+}
+
+footer .kanan .x2{
+	float: right;
+	color: white;
+	margin-left: -100px;
+}
+
+footer .kanan .x2 h1{
+	margin-top: 0px;
+	margin-right: 220px;
+}
+
+footer .kanan img{
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+footer .bawah{
+	width: 100%;
+	padding-top: 10px;
+	color: white;
+	font-size: 12px;
+	float: left;
+	margin-top: 120px;
+	text-align: center;
+	border-top: 1px solid sienna;
+}
+
+footer .bawah a{
+	text-decoration: none;
+	color: red;
+}
+
+/*akhir footer*/
